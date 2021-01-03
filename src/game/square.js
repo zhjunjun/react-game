@@ -1,4 +1,5 @@
 import React from 'react';
+/**
 class Square extends React.Component {
     constructor(props) {
         super(props);
@@ -16,6 +17,16 @@ class Square extends React.Component {
             </button>
         );
     }
+}
+*/
+function Square(props) {
+    return (
+        <button
+            className="square"
+            onClick={() => props.onClick()}>
+            {props.value}
+        </button>
+    )
 }
 
 export default Square;
